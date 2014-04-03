@@ -20,6 +20,10 @@ Implementing the plugin is super-simple.
 `<table>` tag, with the value being the column number that contains a unique record identifier.  Column number
 means the index, counting from the beginning of the table, the column that contains the buttons having index 0, and the column immediately after it having index 1.
 
+Dependencies
+------------
+It seems to work with jQuery 1.7 and later.
+
 Planned Features to be Added
 ----------------------------
 
