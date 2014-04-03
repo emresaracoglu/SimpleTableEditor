@@ -15,7 +15,7 @@ Implementing the plugin is super-simple.
 
 1. Upload the JavaScript file (form_editor.js) to your file tree.
 2. Include it on the web page where you want to use it: `<script src="form_editor.js"></script>` for instance.
-3. Add `class="editable"' to the `<table>` tag.
+3. Add `class="editable"` to the `<table>` tag.
 4. If you want to be able to update and delete database records, add the special attribute "id-column" to the
 `<table>` tag, with the value being the column number that contains a unique record identifier.
 
