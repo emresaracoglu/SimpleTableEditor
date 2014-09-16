@@ -68,7 +68,7 @@ Then, anywhere in the HTML document, in the position you want the table to appea
   
 The 'class' and 'id-column' attributes will be automatically added.  Now the table is linked to the database, and the editable functionality will affect the original database records.  
 
-__Note:__ The <table> element, in either case, must be contained in a <form> whose 'action' attribute is set to specify the file that contains the PHP class instantiation (usually the same file).
+__Note:__ The `<table>` element, in either case, must be contained in a `<form>` whose 'action' attribute is set to specify the file that contains the PHP class instantiation (usually the same file).
 
 __JS__
 
