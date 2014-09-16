@@ -5,7 +5,7 @@ This is a super-lightweight jQuery/PHP plugin that adds simple editable function
 convention is specifically aimed at PHP server-side processing, since the data is collated into an array when
 the inputs are named with brackets at the end.
 
-The attached PHP class can be utilized to automatically create an HTML table with all the data from a MySql database table, or fill an existing HTML table with said data. If the PHP code is used to create the <table>, then the column headers (<th> elements) are determined by the database column names.  In order to use other column headers (or none at all), it is necessary to create an empty HTML table, and use the PHP to fill it with data.
+The attached PHP class can be utilized to automatically create an HTML table with all the data from a MySql database table, or fill an existing HTML table with said data. If the PHP code is used to create the `table`, then the column headers (`th` elements) are determined by the database column names.  In order to use other column headers (or none at all), it is necessary to create an empty HTML table, and use the PHP to fill it with data.
 The PHP code also can process databass record insertion, deletion, and update directly from the HTML <form>.
 
 Implementation
