@@ -19,17 +19,17 @@ First, upload the 'TableLoader.php' file which contains the TableLoaderUpdater c
 
 Next, instantiate the class and specifiy your database parameters in order to enable the class to interact with the database.  It should look something like this:
 
-  $myTableLoader = new TableLoaderUpdater();
-  $myTableLoader->IDField = "recordID";
-  $myTableLoader->table = "mytable";
-  $myTableLoader->dbName = "my_db";
-  $myTableLoader->dbServer = "localhost";
-  $myTableLoader->dbUser = "username";
-  $myTableLoader->password = "password";
+    $myTableLoader = new TableLoaderUpdater();
+    $myTableLoader->IDField = "recordID";
+    $myTableLoader->table = "mytable";
+    $myTableLoader->dbName = "my_db";
+    $myTableLoader->dbServer = "localhost";
+    $myTableLoader->dbUser = "username";
+    $myTableLoader->password = "password";
   
 Alternatively, all the parameters can be detemined in the constructor:
 
-  $myTableLoader = new TableLoaderUpdater("recordID","mytable","my_db","localhost","username","password");
+    $myTableLoader = new TableLoaderUpdater("recordID","mytable","my_db","localhost","username","password");
   
 After that, there are two different ways to implement the class: by associating it with an existing HTML <table> element, or by using to create the <table>.
 
@@ -37,34 +37,34 @@ Using an existing table
 
 Inside the <table> element, use the _fillTable()_ method of the class:
 
-  <table class="editable" id-column="1">
-  <?php
-    $myTableLoader->fillTable();
-  ?>
-  </table>
+    <table class="editable" id-column="1">
+      <?php
+        $myTableLoader->fillTable();
+      ?>
+    </table>
 
 Creating a new table
 
 First, change the _makeTable_ field to true (default is false):
 
-  <?php
-    $myTableLoader->makeTable = true;
-  ?>
+    <?php
+      $myTableLoader->makeTable = true;
+    ?>
   
 If you want columns to be automatically named after the database table columns, you can set the _addColumnHeaders_ field to true as well:
 
-  $myTableLoader->addColumnHeaders = true;
+    $myTableLoader->addColumnHeaders = true;
   
-When creating a new <table> element, there is an option to give it an 'id' attribute, by using the _newTableID_ field:
+When creating a new `<table>` element, there is an option to give it an 'id' attribute, by using the _newTableID_ field:
 
-  $myTableLoader->newTableID = "my_table";
+    $myTableLoader->newTableID = "my_table";
 
 
 Then, anywhere in the HTML document, in the position you want the table to appear, use the _fillTable()_ method:
 
-  <?php
-    $myTableLoader->fillTable();
-  ?>
+    <?php
+      $myTableLoader->fillTable();
+    ?>
   
 The 'class' and 'id-column' attributes will be automatically added.  Now the table is linked to the database, and the editable functionality will affect the original database records.  
 
