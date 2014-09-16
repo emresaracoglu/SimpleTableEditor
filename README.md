@@ -74,12 +74,13 @@ __JS__
 
 1. Upload the JavaScript file (form_editor.js) to your file tree.
 2. Include it on the web page where you want to use it: `<script src="form_editor.js"></script>` for instance.
-3. Add `class="editable"` to the `<table>` tag. (unnecessary if the <table> was created automatically by the PHP code)
+3. Add `class="editable"` to the `<table>` tag. (unnecessary if the table was created automatically by the PHP code)
 4. If you want to be able to update and delete database records, add the special attribute "id-column" to the `<table>` tag, with the value being the column number that contains a unique record identifier.  Column number means the index, counting from the beginning of the table, the column that contains the buttons having index 0, and the column immediately after it having index 1.
 
 Dependencies
 ------------
 It seems to work with jQuery 1.7 and later.
+
 PHP-- I built it with PHP 5.3.10.1, but it should with versions as earlier as 4.1
 
 Notes
