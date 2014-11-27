@@ -2,12 +2,13 @@
 $(function (){
     var addedCounter = 0;
     var editedCounter = 0;
-    var edit_button = "<button class='edit' name='edited' type='button'>עריכה</button>";
-    var delete_button = "<button class='delete' name='deleted' type='button'>מחיקה</button>";
-    var add_button = "<button class='add' type='button' >הוסף שורה</button>";
+    var edit_button = "<button class='edit' name='edited' type='button' style='margin-bottom:4px'>Edit</button>";
+    var delete_button = "<button class='delete' name='deleted' type='button'>Delete</button>";
+    var add_button = "<button class='add' type='button' style='margin-bottom:10px'>Add Record</button>";
     var idIndex = parseInt($(".editable").attr("id-column"));
-    
+    var save_button = "<input type='submit' value='Save Changes' name='save' style='margin:auto;margin-top:15px' />";
     $(".editable").before(add_button);
+    $(".editable").after(save_button);
     $(".editable").find("tr").each(function(){
         $(this).prepend("<td></td>");
         
