@@ -23,14 +23,12 @@ class TableLoaderUpdater {
     function __construct($IDField = "", $tblName = "", $dbName = "", $dbServer = "", $dbUser = "", $dbPassword = "", $createNewTable = false, $newTableID = "", $addColumnHeaders = false) {
         $this->table = $tblName;
         $this->dbName = $dbName;
-     //   $this->dbServer = $dbServer;
+        $this->dbServer = $dbServer;
         $this->dbUser = $dbUser;
         $this->password = $dbPassword;
-        
         $this->makeTable = $createNewTable;
         $this->addColumnHeaders = $addColumnHeaders;
         $this->newTableID = $newTableID;
-//        $this->fields = $this->getFieldNames();
 		$this->IDField = array_search($IDField, $this->fields);
     }
 
