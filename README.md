@@ -31,7 +31,7 @@ Alternatively, all the parameters can be detemined in the constructor:
   
 After that, there are two different ways to implement the class: by associating it with an existing HTML `<table>` element, or by using to create the `<table>`.
 
-_Using an existing table_
+__Using an existing table__
 
 
 Inside the `<table>` element, use the _fillTable()_ method of the class:
