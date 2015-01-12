@@ -1,9 +1,7 @@
 SimpleTableEditor
 =================
 
-This is a super-lightweight jQuery/PHP plugin that adds simple editable functionality to HTML tables.  It's not very fancy looking, but of course can be further embellished through CSS styling or additional plugins, such as [Uniform](http://uniformjs.com/) and the like.  In general, it's a very simple and convenient way to make a database-backed table interactive and updatable.  The syntax of naming the inputs with the `name[]`
-convention is specifically aimed at PHP server-side processing, since the data is collated into an array when
-the inputs are named with brackets at the end.
+This is a super-lightweight jQuery/PHP plugin that adds simple editable functionality to HTML tables.  It's not very fancy looking, but of course can be further embellished through CSS styling or additional plugins, such as [Uniform](http://uniformjs.com/) and the like.  In general, it's a very simple and convenient way to make a database-backed table interactive and updatable.
 
 The attached PHP class can be utilized to automatically create an HTML table with all the data from a MySql database table, or fill an existing HTML table with said data. If the PHP code is used to create the `table`, then the column headers (`th` elements) are determined by the database column names.  In order to use other column headers (or none at all), it is necessary to create an empty HTML table, and use the PHP to fill it with data.
 The PHP code also can process databass record insertion, deletion, and update directly from the HTML <form>.
@@ -31,11 +29,12 @@ Alternatively, all the parameters can be detemined in the constructor:
 
     $myTableLoader = new TableLoaderUpdater("recordID","mytable","my_db","localhost","username","password");
   
-After that, there are two different ways to implement the class: by associating it with an existing HTML <table> element, or by using to create the <table>.
+After that, there are two different ways to implement the class: by associating it with an existing HTML `<table>` element, or by using to create the `<table>`.
 
-Using an existing table
+_Using an existing table_
 
-Inside the <table> element, use the _fillTable()_ method of the class:
+
+Inside the `<table>` element, use the _fillTable()_ method of the class:
 
     <table class="editable" id-column="1">
       <?php
